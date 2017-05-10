@@ -281,3 +281,174 @@ ItemDisplay[(UNI OR SET) (aca OR ach OR acs)]: %NAME% %PURPLE%%MAP%0%WHITE%%CONT
 ItemDisplay[cx3 OR cx4]: %PURPLE%X--%MAP%%NAME%%CONTINUE%%PURPLE%--X%WHITE%
 ItemDisplay[cf2 OR cx2 OR cx5 OR cx6]: %MAP-80%%border-ac%%NAME%%CONTINUE%
 
+
+//Wirt's leg
+ItemDisplay[leg]: %ORANGE%0 %WHITE%%NAME% [%ILVL%]
+// possible cow boots
+ItemDisplay[SET vbt]: %GREEN%%MAP%0 %GREEN%%NAME%%CONTINUE%
+// sorc orbs
+ItemDisplay[(RARE OR MAG OR UNI) CL6]: %NAME% %RED%*%WHITE%%CONTINUE%
+
+// show some useful prices
+// 50k:
+// flying knife:  7tk
+// flying axe:    7ta
+ItemDisplay[ID !NMAG (WP11 OR WP12 OR WP13 OR CL4 OR CL6)]: %NAME% (%PRICE%)%CONTINUE%
+ItemDisplay[ID !NMAG (WP5) ELT]: %NAME% (%PRICE%)%CONTINUE%
+
+// Important new item codes for 1.1
+// uber uniques
+ItemDisplay[uu1 OR uu2 OR uu3 OR uu4 OR uu5 OR uu6 OR uu7 OR uu8 OR uu9]: %NAME% %PURPLE%%MAP%0%WHITE%%CONTINUE%
+
+// A5 portal fragments
+ItemDisplay[re1 OR re2 OR re3 OR cx0]: %NAME% (L%ILVL%) %PURPLE%%MAP%0
+
+// 1.3e chests
+// not chn: that is chain mail
+ItemDisplay[ch0 OR ch1 OR ch2 OR ch3 OR ch4 OR ch5 OR ch6 OR ch7 OR ch8 OR ch9 OR cha OR chb OR chc OR chd OR che OR chf OR chg OR chh OR chi OR chj OR chk OR chl OR chm OR cho OR chp OR chq OR chr OR chs OR cht OR chu]: %NAME%%CONTINUE%%border-9b%%dot-97%
+
+// Anni
+// just using fire res stat because they are all the same
+ItemDisplay[UNI ID cm1 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39% %dark_green%%stat-85%%nl%%gold%%NAME%
+
+// Torches
+ItemDisplay[UNI ID cm2 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39%%nl%%gold%%NAME%%CONTINUE%
+ItemDisplay[UNI cm2 ILVL=99 CLSK0=3]: %dark_green%Amaz %NAME% (Ama)
+ItemDisplay[UNI cm2 ILVL=99 CLSK1=3]: %dark_green%Sorc %NAME% (Sor)
+ItemDisplay[UNI cm2 ILVL=99 CLSK2=3]: %dark_green%Necr %NAME% (Nec)
+ItemDisplay[UNI cm2 ILVL=99 CLSK3=3]: %dark_green%Pala %NAME% (Pal)
+ItemDisplay[UNI cm2 ILVL=99 CLSK4=3]: %dark_green%Barb %NAME% (Bar)
+ItemDisplay[UNI cm2 ILVL=99 CLSK5=3]: %dark_green%Drui %NAME% (Dru)
+ItemDisplay[UNI cm2 ILVL=99 CLSK6=3]: %dark_green%Assa %NAME% (Sin)
+
+// Charms
+ItemDisplay[cm1 ILVL=21]: %NAME% (N 2)
+ItemDisplay[cm1 ILVL=28]: %NAME% (N 3)
+ItemDisplay[cm1 ILVL=34]: %NAME% (N 5)
+ItemDisplay[cm1 ILVL=51]: %NAME% (NM 2)
+ItemDisplay[cm1 ILVL=58]: %NAME% (NM 3)
+ItemDisplay[cm1 ILVL=62]: %NAME% (NM 5)
+
+// Subclasses
+ItemDisplay[nva]: %NAME% (Bar)%CONTINUE%
+ItemDisplay[nvb]: %NAME% (Pal)%CONTINUE%
+ItemDisplay[nvc]: %NAME% (Sor)%CONTINUE%
+ItemDisplay[nvd]: %NAME% (Sin)%CONTINUE%
+ItemDisplay[nve]: %NAME% (Nec)%CONTINUE%
+ItemDisplay[nvf]: %NAME% (Dru)%CONTINUE%
+ItemDisplay[nvg]: %NAME% (Ama)%CONTINUE%
+
+ItemDisplay[nva MULTI-430,800=1]: %ORANGE%Slayer%nl%%gold%%name%
+ItemDisplay[nva MULTI-430,801=1]: %ORANGE%Titan%nl%%gold%%name%
+ItemDisplay[nva MULTI-430,802=1]: %ORANGE%Conqueror%nl%%gold%%name%
+
+ItemDisplay[nvb MULTI-430,803=1]: %ORANGE%Templar%nl%%gold%%name%
+ItemDisplay[nvb MULTI-430,804=1]: %ORANGE%Guardian%nl%%gold%%name%
+ItemDisplay[nvb MULTI-430,805=1]: %ORANGE%Justicar%nl%%gold%%name%
+
+ItemDisplay[nvc MULTI-430,806=1]: %ORANGE%Arcanist%nl%%gold%%name%
+ItemDisplay[nvc MULTI-430,807=1]: %ORANGE%Mage%nl%%gold%%name%
+ItemDisplay[nvc MULTI-430,808=1]: %ORANGE%Clairvoyant%nl%%gold%%name%
+
+ItemDisplay[nvd MULTI-430,809=1]: %ORANGE%Reaper%nl%%gold%%name%
+ItemDisplay[nvd MULTI-430,810=1]: %ORANGE%Viper%nl%%gold%%name%
+ItemDisplay[nvd MULTI-430,811=1]: %ORANGE%Saboteur%nl%%gold%%name%
+
+ItemDisplay[nve MULTI-430,812=1]: %ORANGE%Warlock%nl%%gold%%name%
+ItemDisplay[nve MULTI-430,813=1]: %ORANGE%Occultist%nl%%gold%%name%
+ItemDisplay[nve MULTI-430,814=1]: %ORANGE%Diabolist%nl%%gold%%name%
+
+ItemDisplay[nvf MULTI-430,815=1]: %ORANGE%Destructionist%nl%%gold%%name%
+ItemDisplay[nvf MULTI-430,816=1]: %ORANGE%Shaman%nl%%gold%%name%
+ItemDisplay[nvf MULTI-430,817=1]: %ORANGE%Cerebus%nl%%gold%%name%
+
+ItemDisplay[nvg MULTI-430,818=1]: %ORANGE%Matriarch%nl%%gold%%name%
+ItemDisplay[nvg MULTI-430,819=1]: %ORANGE%Deadeye%nl%%gold%%name%
+ItemDisplay[nvg MULTI-430,820=1]: %ORANGE%Ranger%nl%%gold%%name%
+
+// Subclass items
+// I'm not putting the indicators on some of the more rare ones (you should keep those anyways!)
+
+// Barbarian
+// Slayer: Carnage Heart, Malevar The Wicked, Steelrend
+// not doing Steelrend - please don't sacrifice that one...
+ItemDisplay[UNI ((rg5 ED>19) OR bw3)]: %orange%Slayer%nl%%gold%%name%%MAP%%CONTINUE%
+// Titan: Stone Crusher (Seraph Rod), Verdungo's Hearty Cord (Mithril Coil), Doombringer (Champion Sword)
+ItemDisplay[UNI (7qs || umc || 7b7)]: %orange%Titan%nl%%gold%%name%%MAP%%CONTINUE%
+// Conqueror: Arreat's Face, The Grandfather, Primal Scream
+ItemDisplay[UNI (baa OR 7gd OR ba8)]: %orange%Conqueror%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Paladin
+// Templar: Templar's Might, Kajas Moleventus, Auyver's Gift
+// not doing Templar's
+ItemDisplay[UNI (pad)]: %orange%Templar%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI !ID 9ws]: %orange%Templar?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI ID 9ws CLSK3<2]: %orange%Templar%nl%%gold%%name%%MAP%%CONTINUE%
+// Guardian: Aegis of the Order, Zahhak's Entombment, Gerke's Sanctuary
+ItemDisplay[UNI (pa8 OR uow OR xow)]: %orange%Guardian%nl%%gold%%name%%MAP%%CONTINUE%
+// Justicar: Executioner's Justice, Alma Negra, Herald of Zakarum
+ItemDisplay[UNI (7gi OR pac OR pa9)]: %orange%Justicar%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Druid
+// Keeper (unavailable): Ravenlore, Cranebeak, Birdkeeper Crest
+// ItemDisplay[UNI (dre OR 7mp OR dr2)]: %gray%Keeper%nl%%gold%%name%%MAP%%CONTINUE%
+// Destructionist: Fayamyr (Sacred Feathers), Pompeii's Wrath (Crowbill), La Mort Noire (Colossus Sword)
+ItemDisplay[UNI (9mp || 7fb || dr9)]: %orange%Destructionist%nl%%gold%%name%%MAP%%CONTINUE%
+// Shaman: Dragonbreath, Ancestral Guardian, Ursus Maji
+// not doing Ancestral or Ursus
+ItemDisplay[UNI (dw2)]: %orange%Shaman%nl%%gold%%name%%MAP%%CONTINUE%
+// Cerebus: Cerebus' Bite, Hybrid Vigor, Hammer of Gaul
+ItemDisplay[UNI (drb OR dw1 OR dw6)]: %orange%Cerebus%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Sorceress
+// Arcanist: Edyrem Artifice, Edyrem Odyssey, Transcendence
+ItemDisplay[UNI (7bw OR 6s7)]: %orange%Arcanist%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI sf4 STAT119>19]: %orange%Arcanist%nl%%gold%%name%%MAP%%CONTINUE%
+// Mage: Equilibrium (Silver Ring), Ormus' Robes (Dusk Shroud), Kira's Guardian (Tiara)
+ItemDisplay[UNI (ci2 || uui || (rg4 (OS501=5 || OS502=5 || OS503=5)))]: %orange%Mage%nl%%gold%%name%%MAP%%CONTINUE%
+// Clairvoyant: The Beauty, Divine Dream, Silkweave
+// ItemDisplay[UNI uea !ID]: %NAME% (%ORANGE%Clairvoyant?%GOLD%)%MAP%%CONTINUE%
+ItemDisplay[UNI uea ID STAT8>749]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI (ob8 OR xmb)]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Necromancer
+// Occultist: Warlock's Ward, Blackhand Key, Mendeln's Rapture
+ItemDisplay[UNI (ne8 OR 9gw)]: %orange%Occultist%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI !ID na5]: %orange%Occultist?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI ID na5 ED>149]: %orange%Occultist%nl%%gold%%name%%MAP%%CONTINUE%
+// Diabolist: Cage of Torment, Soul Taker, Dracul's Grasp
+ItemDisplay[UNI (na6 OR na2 OR uvg)]: %orange%Diabolist%nl%%gold%%name%%MAP%%CONTINUE%
+// Warlock: Boneshade, Shadow Resonance, Darkforce Spawn
+ItemDisplay[UNI (7yw OR na3 OR nef)]: %orange%Warlock%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Amazon
+// Matriarch: Stoneraven, The Pillar of Faith, Valkyrie Wing
+ItemDisplay[UNI (amd OR ame OR xhm)]: %orange%Matriarch%nl%%gold%%name%%MAP%%CONTINUE%
+// Deadeye: Lycander's Aim, The Cat's Eye, Dahane's Dowry
+// can't do Dahane's
+ItemDisplay[UNI (am7 OR (au3 IAS=20 ALLSK<1) OR (rg4 STAT156>6))]: %orange%Deadeye%nl%%gold%%name%%MAP%%CONTINUE%
+// Ranger: Aspect of the Thief, Fleet Feet, Tomb Raider
+ItemDisplay[UNI !ID ulb]: %orange%Ranger?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI (ag1 || (ulb MULTI-151,113=5) || am1)]: %orange%Ranger%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Assassin
+// Reaper: Bartuc's Cut-throat, Dushara's Hand, Blade of the Abyss
+// not doing Dushara's
+ItemDisplay[UNI (9tw OR 7ar)]: %orange%Reaper%nl%%gold%%NAME%%MAP%%CONTINUE%
+// Viper: The Noxious Zephyr, Arioc's Needle, Hand of the Serpent Queen
+ItemDisplay[UNI (9qr OR 7sr OR 9lw)]: %orange%Viper%nl%%gold%%NAME%%MAP%%CONTINUE%
+// Saboteur: Ingenuity, Echoes of Evelle, Draincatchers
+// not doing Ingenuity
+ItemDisplay[UNI (7xf OR ab1)]: %orange%Saboteur%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Vessels
+// ItemDisplay[cba]: Blessed Vessel%CONTINUE%
+ItemDisplay[cba || cbb]: %gold%Horadric Vessel%CONTINUE%
+ItemDisplay[cba]: %orange%Blessed Crystal%nl%%name%%CONTINUE%
+ItemDisplay[cbb]: %orange%Regal Crystal%nl%%name%%CONTINUE%
+ItemDisplay[STAT508>0]: Count: %stat-508%%nl%%name%
+ItemDisplay[hcc]: %stat-509% %gray%%stat-510% %orange%%stat-185%%nl%%gold%Horadric Catalyst
+
+// witchcraft made me do it:
+ItemDisplay[UNI 9st ID]: %GOLD%Honda Sedan%CONTINUE%
+
