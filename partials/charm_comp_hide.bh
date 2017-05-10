@@ -1,0 +1,77 @@
+//CHARM COMPONENTS - 3 tiers (primary, secondary, tertiary) each with normal, magic, rare, unique items
+//Normal primary components
+// zai - fire res
+// zcj - silver 25% extra gold
+// zam - light res 4-7
+// zbe - steel - 20-40 ar
+// zao - poi res
+// zaa - hp
+// zae - mana
+// zak - cold res
+// zba - ac
+// hide:
+ItemDisplay[(zaa OR zae OR zai OR zak OR zam OR zao OR zba OR zbe OR zcj)]:
+// show for reset if desired
+// ItemDisplay[(zaa OR zae OR zai OR zak OR zam OR zao OR zba OR zbe OR zcj)]: %NAME%%WHITE%%MAP%
+
+//Normal secondary components
+// zbs - pois 10 over 4s
+// zbp - shock - 1-10 ligh dam
+// zbj - scorch - 4-6 fire dam
+// zbm - cold dmg
+// hide: ele damage adders
+ItemDisplay[(zbs OR zbp OR zbj OR zbm)]:
+ItemDisplay[(zbv OR zby OR zbz OR zcg OR zcl)]:
+// show for reset if desired
+// ItemDisplay[(zbs OR zbp OR zbj OR zbm)]: %NAME%%WHITE%%MAP%
+// ItemDisplay[(zbv OR zby OR zbz OR zcg OR zcl)]:%NAME%%WHITE%%MAP%
+
+//Magic primary components
+// zaf - wyrm 16-20 mana
+// zbb - sturdy - def
+// zab - bear - life
+// zaw - shock - %light dmg
+// zau - frost - %cold
+// zay - poison - %poi
+// zbf - ar
+// hide:
+ItemDisplay[(zab OR zaf OR zas OR zau OR zaw OR zay OR zbb OR zbf)]:
+// show for reset if desired
+// ItemDisplay[(zab OR zaf OR zas OR zau OR zaw OR zay OR zbb OR zbf)]: %NAME%%BLUE%%MAP%
+
+// zaq - brute - 10-15% damage
+// ItemDisplay[(zaq)]: %TAN%0 %BLUE%%NAME%%MAP% %CODE%
+
+//Magic secondary components
+// ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcc OR zcd OR zce OR zcf OR zch OR zcm)]: %BLUE%0 %NAME%%MAP% %CODE%
+// zbk - +fire damage
+// zbt - +poi damage
+// zbq - +light damage
+// zbn - +cold damage
+// zca - fhr
+// zcm - hare - 5 frw
+// hide:
+ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcm)]:
+// show for reset if desired
+// ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcm)]: %NAME%%BLUE%%MAP%
+
+//Magic tertiary components
+// zcs - terror
+// zdr - 2 mana on kill
+// ItemDisplay[(zco OR zcq OR zcs OR zcv OR zcw OR zcx OR zdb OR zdc OR zde OR zdf OR zdk OR zdm OR zdn OR zdo OR zdq OR zdr)]: %GRAY%0 %BLUE%%NAME%%MAP% %CODE%
+// ItemDisplay[(zco OR zcq OR zcv OR zcw OR zcx OR zdb OR zdc OR zde OR zdf OR zdm OR zdn OR zdo OR zdq)]: %GRAY%0 %BLUE%%NAME%%MAP% %CODE%
+// zco - 3% pierce
+// zcq - 3% cb
+// zdc - 2% ds
+// zdk - +4-6% block chance
+ItemDisplay[(zco OR zcq OR zdc OR zdk)]:
+
+// zdq - heal-kill - 5
+// zdr - mana-kill - 2
+// zdb - regen mana 10%
+// zdm - 10% block1 (faster?)
+
+// zbc - strong
+// zck - golden
+ItemDisplay[zbc OR zck]:
+

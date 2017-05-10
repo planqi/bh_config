@@ -9,6 +9,7 @@ configs['HideNothing'] = %w|
   common_things
   beef_common
   crafters_common
+  charm_comp_common
   hide_nothing
   common_end
 |
@@ -23,6 +24,8 @@ configs['HideLotsOfThings'] = %w|
   beef_hide
   beef_common
   crafters_common
+  charm_comp_hide
+  charm_comp_common
   hide_lots
   common_end
 |

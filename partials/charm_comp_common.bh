@@ -1,0 +1,44 @@
+// Magic secondary
+// zcc - -fire res
+// zcd - -cold res
+// zce - -light res
+// zcf - -poi res
+// zch - mf
+ItemDisplay[(zcc OR zcd OR zce OR zcf OR zch)]: 0 %NAME%%MAP%
+
+// zdn - abs - pdr 3
+// zdo - mdr 3
+ItemDisplay[zdn OR zdo]: %MAP%* %NAME%
+// leech charms
+ItemDisplay[zde OR zdf]: %RED%0 %NAME%%dot-0a%
+// other ctc on strike: fire/cold/light - conduction / avalanche / hellfire
+ItemDisplay[zcv OR zcw OR zcx]: %RED%0 %NAME%%dot-0a%
+
+//Rare primary components
+// zaz - witch doc + poi dmg
+// zan - light res
+// zbg - plat - ar
+// zac - mammoth - life
+ItemDisplay[(zac OR zag OR zaj OR zal OR zan OR zap OR zat OR zav OR zax OR zaz OR zbg OR zbi)]: %TAN%0 %YELLOW%%NAME%%MAP%
+
+//Rare secondary components
+ItemDisplay[(zbw OR zbx OR zcb OR zcn)]: %BLUE%0 %YELLOW%%NAME%%MAP%
+
+//Rare tertiary components
+// zcy - phasing - 1% haste on kill
+// zcp - puncture - 5% pierce
+// zdl - 7% block
+ItemDisplay[(zcp OR zcr OR zct OR zcu OR zcy OR zdd OR zdl)]: %GRAY%0 %YELLOW%%NAME%%MAP%
+
+//Unique primary components
+ItemDisplay[(zad OR zah OR zar OR zbd OR zbh)]: %TAN%0 %NAME%%MAP%
+
+//Unique secondary components
+ItemDisplay[(zbl OR zbo OR zbr OR zbu OR zci)]: %BLUE%0 %ORANGE%%NAME%%MAP%
+
+//Unique tertiary components
+ItemDisplay[(zcz OR zda OR zdg OR zdh OR zdi OR zdj OR zdp)]: %GRAY%0 %NAME%%border-0d%%map-9b%
+
+// Skill charm components
+ItemDisplay[zds OR zdt OR zdu OR zdv OR zdx OR zdy OR zdz OR zea OR zeb OR zec OR zed OR zee OR zef OR zeg OR zeh OR zei OR zej OR zek OR zel OR zem OR zen]: %RED%* %NAME%%MAP%
+
