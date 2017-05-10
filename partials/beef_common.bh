@@ -1,0 +1,3 @@
+// beef cuts
+ItemDisplay[bf3]: %ORANGE%%MAP%%NAME%%CONTINUE%
+ItemDisplay[bf4]: %PURPLE%0 %MAP%%NAME%%CONTINUE%
