@@ -1,0 +1,26 @@
+//Ignore 'junk' (Miscellaneous potions, etc.), potion, scroll renaming & smaller gold piles.
+ItemDisplay[GOLD<4000]:
+ItemDisplay[tsc]: %GREEN%+ %WHITE%TP
+ItemDisplay[isc]: %GREEN%+ %WHITE%ID
+ItemDisplay[vps]:
+ItemDisplay[yps]:
+ItemDisplay[wms]:
+ItemDisplay[gps]:
+ItemDisplay[ops]:
+ItemDisplay[gpm]:
+ItemDisplay[opm]:
+ItemDisplay[gpl]:
+ItemDisplay[opl]:
+ItemDisplay[hp1]: // %RED%+ %WHITE%H1
+ItemDisplay[hp2]: // %RED%+ %WHITE%H2
+ItemDisplay[hp3]: // %RED%+ %WHITE%H3
+ItemDisplay[hp4]: // %RED%+ %WHITE%H4
+ItemDisplay[hp5]: %RED%+ H%WHITE%5
+ItemDisplay[mp1]: // %BLUE%+ %WHITE%M1
+ItemDisplay[mp2]: // %BLUE%+ %WHITE%M2
+ItemDisplay[mp3]: // %BLUE%+ %WHITE%M3
+ItemDisplay[mp4]: %BLUE%+ %WHITE%M4
+ItemDisplay[mp5]: %BLUE%+ M%WHITE%5
+ItemDisplay[rvs]: %PURPLE%+ R%WHITE%1
+ItemDisplay[rvl]: %PURPLE%+ Full%dot-8f%
+

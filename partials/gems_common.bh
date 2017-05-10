@@ -1,0 +1,19 @@
+// GEMS
+// Indicators: Color coded (eg. Purple for Amethysts)
+
+// redify normal gems
+// ItemDisplay[GEM=3]: %RED%%NAME%
+// redify/mappify flawless+
+ItemDisplay[GEM>3]: %RED%%GEMLEVEL%%CONTINUE%%map-20%
+// hide flawed, chippeda, normal
+// redify flawed, chipped
+// ItemDisplay[GEM<3]: %RED%%NAME%
+
+ItemDisplay[GEMTYPE=1]: %NAME% %PURPLE%*
+ItemDisplay[GEMTYPE=2]: %NAME% %WHITE%*
+ItemDisplay[GEMTYPE=3]: %NAME% %GREEN%*
+ItemDisplay[GEMTYPE=4]: %NAME% %RED%*
+ItemDisplay[GEMTYPE=5]: %NAME% %BLUE%*
+ItemDisplay[GEMTYPE=6]: %NAME% %YELLOW%*
+ItemDisplay[GEMTYPE=7]: %NAME% %GRAY%*
+

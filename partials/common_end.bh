@@ -1,0 +1,29 @@
+//Add ethereality, sockets, ilvl to the name
+ItemDisplay[NMAG SOCK>0]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[NMAG ETH]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[ETH]: %NAME% %ORANGE%(Eth)%WHITE%%CONTINUE%
+ItemDisplay[SOCK>0]: %NAME% (%SOCKETS%)%CONTINUE%
+ItemDisplay[]: %NAME% [L%ILVL%]%CONTINUE%
+// some more things you can do here: only use one line with any specific condition
+// ItemDisplay[]: %NAME% [L%ILVL% A%ALVL%] %PRICE%%CONTINUE%
+// ItemDisplay[]: %NAME% [L%ILVL%] %PRICE%%CONTINUE%
+// ItemDisplay[SOCK>0]: %NAME%%WHITE%(%SOCKETS%)%CONTINUE%
+// ItemDisplay[]: %NAME% $%PRICE%%CONTINUE%
+
+// Stash Export
+
+// Include Equipment: true, None
+// Include Fixed Stats: true, None
+// Condense Stats: false, None
+Export On Menu: true, None
+// Mustache Templates
+// Export Gear: VK_NUMPAD5
+Mustache Default: json
+Mustache[stats]: {{#defense}}\n\n    >{{defense}} defense{{/defense}}{{#stats}}\n\n    > {{value}}{{#range}} ({{min}}-{{max}}){{/range}} {{^skill}}{{name}}{{/skill}}{{skill}}{{/stats}}
+Mustache[header-unique]: {{#quality=Unique}}**{{^name}}{{type}}{{/name}}{{name}}** (L{{iLevel}}){{#sockets}}[{{sockets}}]{{/sockets}}{{/quality}}
+Mustache[header-magic]: {{#quality$Magic|Rare}}**{{^name}}{{type}}{{/name}}{{name}}** (L{{iLevel}}){{#sockets}}[{{sockets}}]{{/sockets}}{{/quality}}
+Mustache[header-else]: {{#quality^Unique|Magic|Rare}}{{^isRuneword}}{{^name}}{{type}}{{/name}}{{name}}{{/isRuneword}}{{#isRuneword}}**{{runeword}}** {{type}}{{/isRuneword}} (L{{iLevel}}){{#sockets}}[{{sockets}}]{{/sockets}}{{/quality}}
+Mustache[header]: {{#isEthereal}}Eth {{/isEthereal}}{{>header-unique}}{{>header-magic}}{{>header-else}}{{#count}} **x{{count}}**{{/count}}
+Mustache[item]: {{>header}}{{>stats}}{{^isRuneword}}{{#socketed}}\n\n  * {{>>item}}{{/socketed}}{{/isRuneword}}\n
+Mustache[stash]: {{#this}}* {{>item}}\n\n{{/this}}
+

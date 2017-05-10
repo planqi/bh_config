@@ -1,0 +1,380 @@
+// beef cuts
+// hide some beef
+// ItemDisplay[bf1 OR bf2]:
+// ItemDisplay[bf1]:
+ItemDisplay[bf3]: %ORANGE%%MAP%%NAME%%CONTINUE%
+ItemDisplay[bf4]: %PURPLE%0 %MAP%%NAME%%CONTINUE%
+
+// some crafters
+ItemDisplay[cz1 OR cz2 OR cz3 OR cz4 OR cz5 OR cz6 OR cz7 OR cz8]: %RED%%MAP%%NAME%%CONTINUE%
+// cza - nelumbium
+// czb - maiden's carin
+// czc - exalted prism
+ItemDisplay[(cza OR czb OR czc)]: %RED%%MAP%%NAME%%CONTINUE%
+
+// Sorc stones
+ItemDisplay[UNI (sf1 OR sf2 OR sf3 OR sf4)]: %PURPLE%0 %GOLD%%NAME%%MAP%%CONTINUE%
+// Nec armor
+// put exceptional armors on map
+ItemDisplay[UNI (na2 OR na5)]: %NAME%%GOLD%%MAP%%CONTINUE%
+
+
+// Blessed
+// ItemDisplay[cf4]: %RED%Blessed
+ItemDisplay[cf4]: %RED%Blessed%map-0a%%dot-20%
+// ItemDisplay[cf4]:
+ItemDisplay[cf6]: %WHITE%* %NAME%%border-60%%dot-20%
+
+// pandemonium fragment: cx9
+ItemDisplay[cx9]: %NAME%%PURPLE%%MAP%
+
+//CHARM COMPONENTS - 3 tiers (primary, secondary, tertiary) each with normal, magic, rare, unique items
+//Normal primary components
+// zai - fire res
+// zcj - silver 25% extra gold
+// zam - light res 4-7
+// zbe - steel - 20-40 ar
+// zao - poi res
+// zaa - hp
+// zae - mana
+// zak - cold res
+// zba - ac
+// hide:
+// ItemDisplay[(zaa OR zae OR zai OR zak OR zam OR zao OR zba OR zbe OR zcj)]:
+// show for reset if desired
+// ItemDisplay[(zaa OR zae OR zai OR zak OR zam OR zao OR zba OR zbe OR zcj)]: %NAME%%WHITE%%MAP%
+
+//Normal secondary components
+// zbs - pois 10 over 4s
+// zbp - shock - 1-10 ligh dam
+// zbj - scorch - 4-6 fire dam
+// zbm - cold dmg
+// hide: ele damage adders
+// ItemDisplay[(zbs OR zbp OR zbj OR zbm)]:
+// ItemDisplay[(zbv OR zby OR zbz OR zcg OR zcl)]:
+// show for reset if desired
+// ItemDisplay[(zbs OR zbp OR zbj OR zbm)]: %NAME%%WHITE%%MAP%
+// ItemDisplay[(zbv OR zby OR zbz OR zcg OR zcl)]:%NAME%%WHITE%%MAP%
+
+//Magic primary components
+// zaf - wyrm 16-20 mana
+// zbb - sturdy - def
+// zab - bear - life
+// zaw - shock - %light dmg
+// zau - frost - %cold
+// zay - poison - %poi
+// zbf - ar
+// hide:
+// ItemDisplay[(zab OR zaf OR zas OR zau OR zaw OR zay OR zbb OR zbf)]:
+// show for reset if desired
+// ItemDisplay[(zab OR zaf OR zas OR zau OR zaw OR zay OR zbb OR zbf)]: %NAME%%BLUE%%MAP%
+
+// zaq - brute - 10-15% damage
+// ItemDisplay[(zaq)]: %TAN%0 %BLUE%%NAME%%MAP% %CODE%
+
+//Magic secondary components
+// ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcc OR zcd OR zce OR zcf OR zch OR zcm)]: %BLUE%0 %NAME%%MAP% %CODE%
+// zbk - +fire damage
+// zbt - +poi damage
+// zbq - +light damage
+// zbn - +cold damage
+// zca - fhr
+// zcm - hare - 5 frw
+// hide:
+// ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcm)]:
+// show for reset if desired
+// ItemDisplay[(zbk OR zbn OR zbq OR zbt OR zca OR zcm)]: %NAME%%BLUE%%MAP%
+
+// zcc - -fire res
+// zcd - -cold res
+// zce - -light res
+// zcf - -poi res
+// zch - mf
+ItemDisplay[(zcc OR zcd OR zce OR zcf OR zch)]: 0 %NAME%%MAP%
+
+
+//Magic tertiary components
+// zcs - terror
+// zdr - 2 mana on kill
+// ItemDisplay[(zco OR zcq OR zcs OR zcv OR zcw OR zcx OR zdb OR zdc OR zde OR zdf OR zdk OR zdm OR zdn OR zdo OR zdq OR zdr)]: %GRAY%0 %BLUE%%NAME%%MAP% %CODE%
+// ItemDisplay[(zco OR zcq OR zcv OR zcw OR zcx OR zdb OR zdc OR zde OR zdf OR zdm OR zdn OR zdo OR zdq)]: %GRAY%0 %BLUE%%NAME%%MAP% %CODE%
+// zco - 3% pierce
+// zcq - 3% cb
+// zdc - 2% ds
+// zdk - +4-6% block chance
+// ItemDisplay[(zco OR zcq OR zdc OR zdk)]:
+
+// zdq - heal-kill - 5
+// zdr - mana-kill - 2
+// zdb - regen mana 10%
+// zdm - 10% block1 (faster?)
+
+// zdn - abs - pdr 3
+// zdo - mdr 3
+ItemDisplay[zdn OR zdo]: %MAP%* %NAME%
+// leech charms
+ItemDisplay[zde OR zdf]: %RED%0 %NAME%%dot-0a%
+// other ctc on strike: fire/cold/light - conduction / avalanche / hellfire
+ItemDisplay[zcv OR zcw OR zcx]: %RED%0 %NAME%%dot-0a%
+
+//Rare primary components
+// zaz - witch doc + poi dmg
+// zan - light res
+// zbg - plat - ar
+// zac - mammoth - life
+ItemDisplay[(zac OR zag OR zaj OR zal OR zan OR zap OR zat OR zav OR zax OR zaz OR zbg OR zbi)]: %TAN%0 %YELLOW%%NAME%%MAP%
+// hide these
+// zbc - strong
+// zck - golden
+// ItemDisplay[zbc OR zck]:
+
+//Rare secondary components
+ItemDisplay[(zbw OR zbx OR zcb OR zcn)]: %BLUE%0 %YELLOW%%NAME%%MAP%
+
+//Rare tertiary components
+// zcy - phasing - 1% haste on kill
+// zcp - puncture - 5% pierce
+// zdl - 7% block
+ItemDisplay[(zcp OR zcr OR zct OR zcu OR zcy OR zdd OR zdl)]: %GRAY%0 %YELLOW%%NAME%%MAP%
+
+//Unique primary components
+ItemDisplay[(zad OR zah OR zar OR zbd OR zbh)]: %TAN%0 %NAME%%MAP%
+
+//Unique secondary components
+ItemDisplay[(zbl OR zbo OR zbr OR zbu OR zci)]: %BLUE%0 %ORANGE%%NAME%%MAP%
+
+//Unique tertiary components
+ItemDisplay[(zcz OR zda OR zdg OR zdh OR zdi OR zdj OR zdp)]: %GRAY%0 %NAME%%border-0d%%map-9b%
+
+// Skill charm components
+ItemDisplay[zds OR zdt OR zdu OR zdv OR zdx OR zdy OR zdz OR zea OR zeb OR zec OR zed OR zee OR zef OR zeg OR zeh OR zei OR zej OR zek OR zel OR zem OR zen]: %RED%* %NAME%%MAP%
+
+//Wirt's leg
+ItemDisplay[leg]: %ORANGE%0 %WHITE%%NAME% [%ILVL%]
+// possible cow boots
+ItemDisplay[SET vbt]: %GREEN%%MAP%0 %GREEN%%NAME%%CONTINUE%
+// sorc orbs
+ItemDisplay[(RARE OR MAG OR UNI) CL6]: %NAME% %RED%*%WHITE%%CONTINUE%
+
+// show some useful prices
+// 50k:
+// flying knife:  7tk
+// flying axe:    7ta
+ItemDisplay[ID !NMAG (WP11 OR WP12 OR WP13 OR CL4 OR CL6)]: %NAME% (%PRICE%)%CONTINUE%
+ItemDisplay[ID !NMAG (WP5) ELT]: %NAME% (%PRICE%)%CONTINUE%
+
+// Important new item codes for 1.1
+// uber uniques
+ItemDisplay[uu1 OR uu2 OR uu3 OR uu4 OR uu5 OR uu6 OR uu7 OR uu8 OR uu9]: %NAME% %PURPLE%%MAP%0%WHITE%%CONTINUE%
+
+// A5 portal fragments
+ItemDisplay[re1 OR re2 OR re3 OR cx0]: %NAME% (L%ILVL%) %PURPLE%%MAP%0
+
+// 1.3e chests
+// not chn: that is chain mail
+ItemDisplay[ch0 OR ch1 OR ch2 OR ch3 OR ch4 OR ch5 OR ch6 OR ch7 OR ch8 OR ch9 OR cha OR chb OR chc OR chd OR che OR chf OR chg OR chh OR chi OR chj OR chk OR chl OR chm OR cho OR chp OR chq OR chr OR chs OR cht OR chu]: %NAME%%CONTINUE%%border-9b%%dot-97%
+
+// Anni
+// just using fire res stat because they are all the same
+ItemDisplay[UNI ID cm1 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39% %dark_green%%stat-85%%nl%%gold%%NAME%
+
+// Torches
+ItemDisplay[UNI ID cm2 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39%%nl%%gold%%NAME%%CONTINUE%
+ItemDisplay[UNI cm2 ILVL=99 CLSK0=3]: %dark_green%Amaz %NAME% (Ama)
+ItemDisplay[UNI cm2 ILVL=99 CLSK1=3]: %dark_green%Sorc %NAME% (Sor)
+ItemDisplay[UNI cm2 ILVL=99 CLSK2=3]: %dark_green%Necr %NAME% (Nec)
+ItemDisplay[UNI cm2 ILVL=99 CLSK3=3]: %dark_green%Pala %NAME% (Pal)
+ItemDisplay[UNI cm2 ILVL=99 CLSK4=3]: %dark_green%Barb %NAME% (Bar)
+ItemDisplay[UNI cm2 ILVL=99 CLSK5=3]: %dark_green%Drui %NAME% (Dru)
+ItemDisplay[UNI cm2 ILVL=99 CLSK6=3]: %dark_green%Assa %NAME% (Sin)
+
+// Charms
+ItemDisplay[cm1 ILVL=21]: %NAME% (N 2)
+ItemDisplay[cm1 ILVL=28]: %NAME% (N 3)
+ItemDisplay[cm1 ILVL=34]: %NAME% (N 5)
+ItemDisplay[cm1 ILVL=51]: %NAME% (NM 2)
+ItemDisplay[cm1 ILVL=58]: %NAME% (NM 3)
+ItemDisplay[cm1 ILVL=62]: %NAME% (NM 5)
+
+// Subclasses
+ItemDisplay[nva]: %NAME% (Bar)%CONTINUE%
+ItemDisplay[nvb]: %NAME% (Pal)%CONTINUE%
+ItemDisplay[nvc]: %NAME% (Sor)%CONTINUE%
+ItemDisplay[nvd]: %NAME% (Sin)%CONTINUE%
+ItemDisplay[nve]: %NAME% (Nec)%CONTINUE%
+ItemDisplay[nvf]: %NAME% (Dru)%CONTINUE%
+ItemDisplay[nvg]: %NAME% (Ama)%CONTINUE%
+
+ItemDisplay[nva MULTI-430,800=1]: %ORANGE%Slayer%nl%%gold%%name%
+ItemDisplay[nva MULTI-430,801=1]: %ORANGE%Titan%nl%%gold%%name%
+ItemDisplay[nva MULTI-430,802=1]: %ORANGE%Conqueror%nl%%gold%%name%
+
+ItemDisplay[nvb MULTI-430,803=1]: %ORANGE%Templar%nl%%gold%%name%
+ItemDisplay[nvb MULTI-430,804=1]: %ORANGE%Guardian%nl%%gold%%name%
+ItemDisplay[nvb MULTI-430,805=1]: %ORANGE%Justicar%nl%%gold%%name%
+
+ItemDisplay[nvc MULTI-430,806=1]: %ORANGE%Arcanist%nl%%gold%%name%
+ItemDisplay[nvc MULTI-430,807=1]: %ORANGE%Mage%nl%%gold%%name%
+ItemDisplay[nvc MULTI-430,808=1]: %ORANGE%Clairvoyant%nl%%gold%%name%
+
+ItemDisplay[nvd MULTI-430,809=1]: %ORANGE%Reaper%nl%%gold%%name%
+ItemDisplay[nvd MULTI-430,810=1]: %ORANGE%Viper%nl%%gold%%name%
+ItemDisplay[nvd MULTI-430,811=1]: %ORANGE%Saboteur%nl%%gold%%name%
+
+ItemDisplay[nve MULTI-430,812=1]: %ORANGE%Warlock%nl%%gold%%name%
+ItemDisplay[nve MULTI-430,813=1]: %ORANGE%Occultist%nl%%gold%%name%
+ItemDisplay[nve MULTI-430,814=1]: %ORANGE%Diabolist%nl%%gold%%name%
+
+ItemDisplay[nvf MULTI-430,815=1]: %ORANGE%Destructionist%nl%%gold%%name%
+ItemDisplay[nvf MULTI-430,816=1]: %ORANGE%Shaman%nl%%gold%%name%
+ItemDisplay[nvf MULTI-430,817=1]: %ORANGE%Cerebus%nl%%gold%%name%
+
+ItemDisplay[nvg MULTI-430,818=1]: %ORANGE%Matriarch%nl%%gold%%name%
+ItemDisplay[nvg MULTI-430,819=1]: %ORANGE%Deadeye%nl%%gold%%name%
+ItemDisplay[nvg MULTI-430,820=1]: %ORANGE%Ranger%nl%%gold%%name%
+
+// Subclass items
+// I'm not putting the indicators on some of the more rare ones (you should keep those anyways!)
+
+// Barbarian
+// Slayer: Carnage Heart, Malevar The Wicked, Steelrend
+// not doing Steelrend - please don't sacrifice that one...
+ItemDisplay[UNI ((rg5 ED>19) OR bw3)]: %orange%Slayer%nl%%gold%%name%%MAP%%CONTINUE%
+// Titan: Stone Crusher (Seraph Rod), Verdungo's Hearty Cord (Mithril Coil), Doombringer (Champion Sword)
+ItemDisplay[UNI (7qs || umc || 7b7)]: %orange%Titan%nl%%gold%%name%%MAP%%CONTINUE%
+// Conqueror: Arreat's Face, The Grandfather, Primal Scream
+ItemDisplay[UNI (baa OR 7gd OR ba8)]: %orange%Conqueror%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Paladin
+// Templar: Templar's Might, Kajas Moleventus, Auyver's Gift
+// not doing Templar's
+ItemDisplay[UNI (pad)]: %orange%Templar%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI !ID 9ws]: %orange%Templar?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI ID 9ws CLSK3<2]: %orange%Templar%nl%%gold%%name%%MAP%%CONTINUE%
+// Guardian: Aegis of the Order, Zahhak's Entombment, Gerke's Sanctuary
+ItemDisplay[UNI (pa8 OR uow OR xow)]: %orange%Guardian%nl%%gold%%name%%MAP%%CONTINUE%
+// Justicar: Executioner's Justice, Alma Negra, Herald of Zakarum
+ItemDisplay[UNI (7gi OR pac OR pa9)]: %orange%Justicar%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Druid
+// Keeper (unavailable): Ravenlore, Cranebeak, Birdkeeper Crest
+// ItemDisplay[UNI (dre OR 7mp OR dr2)]: %gray%Keeper%nl%%gold%%name%%MAP%%CONTINUE%
+// Destructionist: Fayamyr (Sacred Feathers), Pompeii's Wrath (Crowbill), La Mort Noire (Colossus Sword)
+ItemDisplay[UNI (9mp || 7fb || dr9)]: %orange%Destructionist%nl%%gold%%name%%MAP%%CONTINUE%
+// Shaman: Dragonbreath, Ancestral Guardian, Ursus Maji
+// not doing Ancestral or Ursus
+ItemDisplay[UNI (dw2)]: %orange%Shaman%nl%%gold%%name%%MAP%%CONTINUE%
+// Cerebus: Cerebus' Bite, Hybrid Vigor, Hammer of Gaul
+ItemDisplay[UNI (drb OR dw1 OR dw6)]: %orange%Cerebus%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Sorceress
+// Arcanist: Edyrem Artifice, Edyrem Odyssey, Transcendence
+ItemDisplay[UNI (7bw OR 6s7)]: %orange%Arcanist%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI sf4 STAT119>19]: %orange%Arcanist%nl%%gold%%name%%MAP%%CONTINUE%
+// Mage: Equilibrium (Silver Ring), Ormus' Robes (Dusk Shroud), Kira's Guardian (Tiara)
+ItemDisplay[UNI (ci2 || uui || (rg4 (OS501=5 || OS502=5 || OS503=5)))]: %orange%Mage%nl%%gold%%name%%MAP%%CONTINUE%
+// Clairvoyant: The Beauty, Divine Dream, Silkweave
+// ItemDisplay[UNI uea !ID]: %NAME% (%ORANGE%Clairvoyant?%GOLD%)%MAP%%CONTINUE%
+ItemDisplay[UNI uea ID STAT8>749]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI (ob8 OR xmb)]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Necromancer
+// Occultist: Warlock's Ward, Blackhand Key, Mendeln's Rapture
+ItemDisplay[UNI (ne8 OR 9gw)]: %orange%Occultist%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI !ID na5]: %orange%Occultist?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI ID na5 ED>149]: %orange%Occultist%nl%%gold%%name%%MAP%%CONTINUE%
+// Diabolist: Cage of Torment, Soul Taker, Dracul's Grasp
+ItemDisplay[UNI (na6 OR na2 OR uvg)]: %orange%Diabolist%nl%%gold%%name%%MAP%%CONTINUE%
+// Warlock: Boneshade, Shadow Resonance, Darkforce Spawn
+ItemDisplay[UNI (7yw OR na3 OR nef)]: %orange%Warlock%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Amazon
+// Matriarch: Stoneraven, The Pillar of Faith, Valkyrie Wing
+ItemDisplay[UNI (amd OR ame OR xhm)]: %orange%Matriarch%nl%%gold%%name%%MAP%%CONTINUE%
+// Deadeye: Lycander's Aim, The Cat's Eye, Dahane's Dowry
+// can't do Dahane's
+ItemDisplay[UNI (am7 OR (au3 IAS=20 ALLSK<1) OR (rg4 STAT156>6))]: %orange%Deadeye%nl%%gold%%name%%MAP%%CONTINUE%
+// Ranger: Aspect of the Thief, Fleet Feet, Tomb Raider
+ItemDisplay[UNI !ID ulb]: %orange%Ranger?%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI (ag1 || (ulb MULTI-151,113=5) || am1)]: %orange%Ranger%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Assassin
+// Reaper: Bartuc's Cut-throat, Dushara's Hand, Blade of the Abyss
+// not doing Dushara's
+ItemDisplay[UNI (9tw OR 7ar)]: %orange%Reaper%nl%%gold%%NAME%%MAP%%CONTINUE%
+// Viper: The Noxious Zephyr, Arioc's Needle, Hand of the Serpent Queen
+ItemDisplay[UNI (9qr OR 7sr OR 9lw)]: %orange%Viper%nl%%gold%%NAME%%MAP%%CONTINUE%
+// Saboteur: Ingenuity, Echoes of Evelle, Draincatchers
+// not doing Ingenuity
+ItemDisplay[UNI (7xf OR ab1)]: %orange%Saboteur%nl%%gold%%name%%MAP%%CONTINUE%
+
+// Vessels
+// ItemDisplay[cba]: Blessed Vessel%CONTINUE%
+ItemDisplay[cba || cbb]: %gold%Horadric Vessel%CONTINUE%
+ItemDisplay[cba]: %orange%Blessed Crystal%nl%%name%%CONTINUE%
+ItemDisplay[cbb]: %orange%Regal Crystal%nl%%name%%CONTINUE%
+ItemDisplay[STAT508>0]: Count: %stat-508%%nl%%name%
+ItemDisplay[hcc]: %stat-509% %gray%%stat-510% %orange%%stat-185%%nl%%gold%Horadric Catalyst
+
+// cleanup, hide
+// no normal/except nonmag
+// WARNING - this will hide some NMAG normal/exceptional items you may want (e.g. 3 bo helms) because of how BH works
+//   How to get around it: add the base to the !() parens at the end, separated by OR
+//   It is a bit of a kluge but it works
+// ItemDisplay[NMAG (NORM OR EXC) !(aca OR ach OR acs OR leg) ILVL>60 !((ETH crs) OR (WP11 NMAG (SOCK=4 OR SOCK=0) (SK58>2 OR SK50>2)) OR (CL2 ILVL>25 !ETH NMAG !SOCK=1 !SOCK=2 SK149>2)) ]:
+
+// if you don't care about anything normal or exceptional:
+// ItemDisplay[NMAG (NORM OR EXC) !(aca OR ach OR acs OR leg) ILVL>60]:
+
+// arrows/bolts
+// ItemDisplay[NMAG (aqv OR cqv) ILVL>0]:
+// keys
+// ItemDisplay[key ILVL>60]:
+// normal/exceptional magic junk
+// ItemDisplay[MAG !ID (NORM OR EXC) (WP1 OR WP2 OR WP3 OR WP4 OR WP5 OR WP6 OR WP7 OR WP8 OR WP9 OR WP10 OR EQ2 OR EQ3 OR EQ4 OR EQ5 OR EQ6) ILVL>70 !(aca OR ach OR acs OR leg)]:
+
+// eth items, this these could use some tuning
+ItemDisplay[ARMOR (ELT OR xar) ETH NMAG]: %NAME%%border-1d%%map-13%%CONTINUE%
+// eth armors
+ItemDisplay[ARMOR (RARE OR UNI) ETH]: %NAME%%border-1d%%map-13%%CONTINUE%
+// eth weapons
+ItemDisplay[WEAPON (RARE OR UNI) ETH]: %NAME%%border-1d%%map-13%%CONTINUE%
+
+// hide specific elites - things I've seen drop too much
+// Gorgon Crossbow - 6mx
+// Colossus x-bow - 6hx
+// Monarch - uit
+// Hyperion Spear - 7sr
+// Decapatator - 7bt
+// Mancatcher - 7br
+// Truncheon - 7cl
+// Ogre Maul - 7m7
+// Tyrant Club - 7sp
+// ItemDisplay[(NMAG OR MAG) ILVL>80 (6mx OR 6hx OR uit OR 7sr OR 7bt OR 7br OR 7cl OR 7m7 OR 7sp)]:
+
+// Show white/magic arcane stones for crafting
+// ItemDisplay[((MAG !ID) OR NMAG) sf4]: %NAME%
+
+// Garnet: rg3
+// ItemDisplay[(NMAG OR MAG) rg3]: %NAME% %ORANGE%*%WHITE%%CONTINUE%%map-60%%border-20%
+
+// hide white jewelry
+// ItemDisplay[NMAG (rg1 OR rg2 OR rg3 OR rg4 OR rg5 OR au1 OR au2 OR au3 OR au4 OR au5) ILVL>60]:
+// ItemDisplay[NMAG (sf1 OR sf2 OR sf3 OR sf4)]:
+// hide magic unid jewelry
+// ItemDisplay[MAG !ID (rg1 OR rg2 OR rg3 OR rg4 OR rg5 OR au1 OR au2 OR au3 OR au4 OR au5) ILVL>60]:
+// iirc these don't drop NMAG
+// ItemDisplay[MAG !ID (sf1 OR sf2 OR sf3 OR sf4)]:
+
+// witchcraft made me do it:
+ItemDisplay[UNI 9st ID]: %GOLD%Honda Sedan%CONTINUE%
+
+// hide most elite throwers
+// ItemDisplay[(NMAG OR MAG) ELT WP5 !ETH]:
+// hide quivers
+// ItemDisplay[MAG (aq1 OR bq1)]:
+// hide xbows
+// ItemDisplay[(NMAG OR MAG) ELT WP10]:
+// hide most armors
+// ItemDisplay[(NMAG OR MAG) ELT EQ2 !SUP !aca !ETH]:
+

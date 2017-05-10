@@ -1,0 +1,182 @@
+// Some named colors here for convenicne
+// full pallette: http://www.bikejr.com/diablo/mh/colorpalette.bmp
+// 0x20;  // white
+// 0x0A;  // red
+// 0x84;  // green
+// 0x97;  // blue
+// 0x0D;  // gold
+// 0xD0;  // gray
+// 0x00;  // black
+// 0x5A;  // tan
+// 0x60;  // orange
+// 0x0C;  // yellow
+// 0x9B;  // purple
+// 0x76;  // dark green
+
+Stat Screen[skill_pierce]: // projectile pierce
+// Resurgence only stats
+Stat Screen[cooldown_modifier]: // reduced cooldown
+Stat Screen[curse_resistance]:
+Stat Screen[passive_dmg_pierce]: // phys pierce
+
+//Maphack Configuration
+Missile Color[Player]:   0x97
+Missile Color[Neutral]:  0x0A
+Missile Color[Partied]:  0x84
+Missile Color[Hostile]:  0x5B
+
+Monster Color[Normal]:   0x5B
+Monster Color[Minion]:   0x60
+Monster Color[Champion]: 0x91
+Monster Color[Boss]:     0x84
+
+Monster Hide[149]: // chicken
+Monster Hide[179]: // towncow
+Monster Hide[556]: // towncow
+
+Monster Color[149]:      0x0F // chicken
+Monster Color[179]:      0x0F // towncow
+
+Monster Line[149]:      0x9B // chicken
+Monster Line[479]:      0x9B // shenk
+Monster Line[160]:      0x9B // coldcrow - cr_archer1
+Monster Line[103]:      0x9B // kaa - unraveler3
+
+Monster Line[706]:      0x9B // uber izual
+Monster Line[707]:      0x9B // lilith
+Monster Line[708]:      0x9B // uber duriel
+
+Monster Color[807]:      0x9B // kf - dark herald
+Monster Color[809]:      0x50 // kf - revenant
+
+//Dangerous Monsters
+//Gloams & Dolls
+Monster Color[118]:      0x9B
+Monster Color[119]:      0x9B
+Monster Color[120]:      0x9B
+Monster Color[121]:      0x9B
+Monster Color[212]:      0x9B
+Monster Color[213]:      0x9B
+Monster Color[214]:      0x9B
+Monster Color[215]:      0x9B
+Monster Color[216]:      0x9B
+Monster Color[639]:      0x9B
+Monster Color[640]:      0x9B
+Monster Color[641]:      0x9B
+Monster Color[690]:      0x9B
+Monster Color[691]:      0x9B
+Monster Color[733]:      0x9B
+Monster Color[754]:      0x9B // ostyian priests - templemummyboss
+Monster Color[740]:      0x9B // hammerpriest
+
+// These drop charm compoments - some are still dangerous
+// Gargantua (skin)
+Monster Color[743]:      0x9B
+// frogdemon3 (poison max res) - a3 / sewers level 2 / flayer jungle
+Monster Color[249]:      0x79
+// unraveler3 (poison damage) - a2 / all tombs
+Monster Color[103]:      0x79
+// molten brute (fire damage) - crystalline / wsk 1 / throne room
+Monster Color[747]:      0x9B
+// riversuccumbus (3-4% mana) - frozen river / wsk 1/2/3 / throne room
+Monster Color[750]:      0x9B
+// novabat (light damage) - glacial trail / wsk 1/2/3/ throne
+Monster Color[759]:      0xA8
+
+Reveal Map:             True, None
+Show Monsters:          True, None
+Show Missiles:          False, None
+Show Chests:            True, VK_K
+Force Light Radius:     False, None
+Remove Weather:         False, None
+Infravision:            True, None
+Display Level Names:    True, None
+Remove Shake:           True, None
+RevealMode:             1
+
+Reload Config:          VK_NUMPAD0
+
+//Skill Warnings: set true to warn when effect expires from the player
+//The skill numbers can be found here:
+//https://github.com/underbent/slashdiablo-maphack/wiki/Effects
+Skill Warning[16]:      True            // enchant
+// Skill Warning[32]:      True            // battle orders
+Skill Warning[101]:     True            // holy shield
+Skill Warning[149]:     False           // oak sage
+Skill Warning[151]:     True           // cyclone armor
+
+//Screen Info Configuration
+AutomapInfo[0]:         Name: %GAMENAME%
+AutomapInfo[1]:         Password: %GAMEPASS%
+AutomapInfo[2]:         %LEVEL%
+AutomapInfo[3]:         %GAMEDIFF% - v2.0
+AutomapInfo[4]:         %GAMETIME%
+AutomapInfo[5]:         %ACCOUNTNAME%
+
+// Experience Display
+Experience Meter:		True, VK_NUMPAD7
+
+// Controls how many frames to recycle the minimap doodads for
+Minimap Max Ghost: 10
+
+//Quest Drop Warning for Mephisto/Diablo/Baal quests
+Quest Drop Warning:     False
+
+//Gamefilter Configuration
+GameListRefresh:        1500
+
+//Bnet Configuration
+Show Last Game:         True
+Fail To Join:           4000
+
+//Character Configuration
+Character Stats:         VK_8
+
+//Item Configuration
+Show Ethereal:          True, None
+Show Sockets:           True, None
+Show iLvl:              True, None
+Show Rune Numbers:      True, None
+Alt Item Style:         True, None
+Color Mod:              False, None
+Shorten Item Names:     False, None
+Show Players Gear:      VK_0
+
+//AutoTele Configuration
+Display Messages:       True, None
+Draw Path:              True, None
+Draw Destination:       True, None
+CP to cave:             False, None
+
+Path Color:             97
+Next Color:             0x97
+Other Color:            0x0A
+WP Color:               0x84
+Prev Color:             0x5B
+Other Extra Color:      0xA8
+
+//Party Configuration
+Party Enabled:          True, VK_9
+Looting Enabled:        True, VK_7
+
+//Using Potions in Inventory
+// Use Healing Potion:     False, VK_V
+// Use Mana Potion:        False, VK_G
+
+//Spam Filter Configuration
+Log Chat:               True, None
+Log Blocks:             False, None
+Enabled:                True, None
+Autosave:               False, None
+Log File:               chatlog.txt
+Update URL:
+Token DB:               tokens.db
+
+//Slippitty's Config v2.3 for BH v0.1.5
+// Fog's Custom Config (Revision 4.0) for BH v0.1.4
+//Shoutout to underbent for updates of BH and a great wiki
+// Greatly modified by planqi for Resurgence
+
+//Item Display Configuration
+Advanced Item Display:  True, None
+

@@ -1,0 +1,25 @@
+//Display jewels on the map
+ItemDisplay[NMAG (jw1 OR jw2 OR jw3 OR jw4 OR jw5 OR jw6)]: %RED%* %WHITE%%NAME%%MAP-20%%CONTINUE%
+ItemDisplay[MAG (jw1 OR jw2 OR jw3 OR jw4 OR jw5 OR jw6)]: %RED%* %BLUE%%NAME%%MAP-97%%CONTINUE%
+
+//Uniques
+ItemDisplay[UNI NORM]: %GRAY%0 %GOLD%%NAME%%CONTINUE%%border-20%%map-0d%
+ItemDisplay[UNI EXC !(aca || ach || acs)]: %RED%0 %GOLD%%NAME%%CONTINUE%%border-0d%%dot-20%
+ItemDisplay[UNI ELT]: %PURPLE%0 %GOLD%%NAME%%border-0d%%CONTINUE%
+ItemDisplay[UNI (jw1 OR jw2 OR jw3 OR jw4 OR jw5 OR jw6)]: %PURPLE%0 %GOLD%%NAME%%MAP%%CONTINUE%
+ItemDisplay[UNI (aq1 OR bq1)]: %NAME% %PURPLE%*%map-5a%%border-ac%
+
+// Alpha's Howl
+ItemDisplay[UNI dr6]: %GOLD%%MAP%%NAME%%CONTINUE%%dot-20%
+
+// String of Ears / Bandolier's Banner
+ItemDisplay[UNI zlb]: %GOLD%%MAP%%NAME%%CONTINUE%%dot-20%
+
+// Darkglow - 5% max res armor
+ItemDisplay[UNI rng]: %GOLD%%MAP%%NAME%%CONTINUE%%dot-20%
+
+//Set Items
+ItemDisplay[SET NORM]: %GRAY%0 %GREEN%%NAME%%CONTINUE%
+ItemDisplay[SET EXC]: %RED%0 %GREEN%%NAME%%CONTINUE%
+ItemDisplay[SET ELT]: %PURPLE%0 %GREEN%%NAME%%dot-84%%CONTINUE%
+
