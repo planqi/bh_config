@@ -1,0 +1,16 @@
+// some crafters
+ItemDisplay[cz1 OR cz2 OR cz3 OR cz4 OR cz5 OR cz6 OR cz7 OR cz8]: %RED%%MAP%%NAME%%CONTINUE%
+// cza - nelumbium
+// czb - maiden's carin
+// czc - exalted prism
+ItemDisplay[(cza OR czb OR czc)]: %RED%%MAP%%NAME%%CONTINUE%
+
+// Blessed
+// ItemDisplay[cf4]: %RED%Blessed
+ItemDisplay[cf4]: %RED%Blessed%map-0a%%dot-20%
+// ItemDisplay[cf4]:
+ItemDisplay[cf6]: %WHITE%* %NAME%%border-60%%dot-20%
+
+// pandemonium fragment: cx9
+ItemDisplay[cx9]: %NAME%%PURPLE%%MAP%
+

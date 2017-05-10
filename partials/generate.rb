@@ -8,6 +8,7 @@ configs['HideNothing'] = %w|
   runes_map_all
   common_things
   beef_common
+  crafters_common
   hide_nothing
   common_end
 |
@@ -21,6 +22,7 @@ configs['HideLotsOfThings'] = %w|
   common_things
   beef_hide
   beef_common
+  crafters_common
   hide_lots
   common_end
 |
