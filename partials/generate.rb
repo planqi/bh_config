@@ -10,7 +10,6 @@ configs['HideNothing'] = %w|
   beef_common
   crafters_common
   charm_comp_common
-  hide_nothing
   common_end
 |
 
