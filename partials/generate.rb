@@ -29,6 +29,3 @@ end
 configs.each do |k, v|
   `cat #{prep_list v} > ../#{k}/BH.cfg`
 end
-
-# `cat #{prep_list hide_nothing} > ../HideNothing/BH.cfg`
-# `cat #{prep_list hide_lots_of_things} > ../HideLotsOfThings/BH.cfg`
