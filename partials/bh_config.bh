@@ -13,7 +13,6 @@
 // 0x9B;  // purple
 // 0x76;  // dark green
 
-Stat Screen[skill_pierce]: // projectile pierce
 // Resurgence only stats
 Stat Screen[cooldown_modifier]: // reduced cooldown
 Stat Screen[curse_resistance]:
