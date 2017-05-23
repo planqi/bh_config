@@ -92,6 +92,7 @@ Remove Shake:           True, None
 RevealMode:             1
 
 Reload Config:          VK_NUMPAD0
+Stats on Right:         False, None
 
 //Skill Warnings: set true to warn when effect expires from the player
 //The skill numbers can be found here:
