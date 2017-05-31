@@ -31,11 +31,11 @@ ItemDisplay[(NMAG OR MAG) ILVL>80 (6mx OR 6hx OR uit OR 7sr OR 7bt OR 7br OR 7cl
 // ItemDisplay[((MAG !ID) OR NMAG) sf4]: %NAME%
 
 // Garnet: rg3
-// ItemDisplay[(NMAG OR MAG) rg3]: %NAME% %ORANGE%*%WHITE%%CONTINUE%%map-60%%border-20%
+// ItemDisplay[(NMAG OR MAG) rg3]: %NAME% %ORANGE%*%WHITE%%map-60%%border-20%
 
 // hide white jewelry
 ItemDisplay[NMAG (rg1 OR rg2 OR rg3 OR rg4 OR rg5 OR au1 OR au2 OR au3 OR au4 OR au5) ILVL>60]:
-// ItemDisplay[NMAG (sf1 OR sf2 OR sf3 OR sf4)]:
+ItemDisplay[NMAG (sf1 OR sf2 OR sf3 OR sf4) ILVL>60]:
 // hide magic unid jewelry
 ItemDisplay[MAG !ID (rg1 OR rg2 OR rg3 OR rg4 OR rg5 OR au1 OR au2 OR au3 OR au4 OR au5) ILVL>60]:
 // iirc these don't drop NMAG
@@ -44,7 +44,8 @@ ItemDisplay[MAG !ID (sf1 OR sf2 OR sf3 OR sf4)]:
 // hide most elite throwers
 // ItemDisplay[(NMAG OR MAG) ELT WP5 !ETH]:
 // hide quivers
-ItemDisplay[MAG (aq1 OR bq1)]:
+ItemDisplay[(MAG || NMAG) (aq1 || aq2 || aq3 || aq4 || aq5 || aq6 || bq1 || bq2 || bq3 || bq4)]:
+
 // hide xbows
 ItemDisplay[(NMAG OR MAG) ELT WP10]:
 // hide most armors
