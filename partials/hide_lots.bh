@@ -30,8 +30,9 @@ ItemDisplay[(NMAG OR MAG) ILVL>80 (6mx OR 6hx OR uit OR 7sr OR 7bt OR 7br OR 7cl
 // Show white/magic arcane stones for crafting
 // ItemDisplay[((MAG !ID) OR NMAG) sf4]: %NAME%
 
+// Opal: rg2
 // Garnet: rg3
-// ItemDisplay[(NMAG OR MAG) rg3]: %NAME% %ORANGE%*%WHITE%%map-60%%border-20%
+// ItemDisplay[(NMAG OR MAG) (rg3 || rg2)]: %NAME% %ORANGE%*%WHITE%%map-60%%border-20%%continue%
 
 // hide white jewelry
 ItemDisplay[NMAG (rg1 OR rg2 OR rg3 OR rg4 OR rg5 OR au1 OR au2 OR au3 OR au4 OR au5) ILVL>60]:
