@@ -31,6 +31,10 @@ def prep_list(list)
   list.map { |i| "#{i}.bh" }.join ' '
 end
 
+def metadata(name)
+  "\"Metadata[description]: planqi's #{name} Resurgence config\""
+end
+
 configs.each do |k, v|
-  `cat #{prep_list v} > ../#{k}/BH.cfg`
+  `echo #{metadata k} | cat - #{prep_list v} > ../#{k}/BH.cfg`
 end
