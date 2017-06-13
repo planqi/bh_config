@@ -362,13 +362,13 @@ ItemDisplay[UNI (%n0 || %n1 || %n2 || %n3 || %n4 || %n5 || %n6)]: %purple%0 %gol
 // crafters
 // common
 ItemDisplay[%a0 || %a4 || %a8]: %blue%+ %name%%dot-20%%map-00%
-ItemDisplay[%ac || %ag]: %blue%+ %name%%map-00%%border-97%
+ItemDisplay[%ac || %ai]: %blue%+ %name%%map-00%%border-97%
 // less common
-ItemDisplay[%a1 || %a5 || %a9 || %ad || %ah]: %dark_green%+ %name%%border-81%%map-00%%CONTINUE%
+ItemDisplay[%a1 || %a5 || %a9 || %ad]: %dark_green%+ %name%%border-81%%map-00%
 // rare
-ItemDisplay[%a2 || %a6 || %aa || %ae || %ai]: %purple%+ %name%%border-9b%%map-00%%CONTINUE%
+ItemDisplay[%a2 || %a6 || %aa || %ae || %ag || %ah]: %purple%+ %name%%border-9b%%map-00%
 // super rare
-ItemDisplay[%a3 || %a7 || %ab || %af || %aj || %ak]: %orange%0 %name%%border-9b%%dot-60%%CONTINUE%
+ItemDisplay[%a3 || %a7 || %ab || %af || %aj || %ak]: %orange%0 %name%%border-9b%%dot-60%
 
 // Anni
 // just using fire res stat because they are all the same
@@ -474,7 +474,7 @@ ItemDisplay[UNI sf4 STAT119>19]: %orange%Arcanist%nl%%gold%%name%%MAP%%CONTINUE%
 ItemDisplay[UNI (ci2 || uui || (rg4 (OS501=5 || OS502=5 || OS503=5)))]: %orange%Mage%nl%%gold%%name%%MAP%%CONTINUE%
 // Clairvoyant: The Beauty, Divine Dream, Silkweave
 // ItemDisplay[UNI uea !ID]: %NAME% (%ORANGE%Clairvoyant?%GOLD%)%MAP%%CONTINUE%
-ItemDisplay[UNI uea ID STAT9>700]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
+ItemDisplay[UNI uea ID MANA>700]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
 ItemDisplay[UNI (ob8 OR xmb)]: %orange%Clairvoyant%nl%%gold%%name%%MAP%%CONTINUE%
 
 // Necromancer
