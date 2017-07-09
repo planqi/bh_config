@@ -37,7 +37,7 @@ ItemDisplay[(zad OR zah OR zar OR zbd OR zbh)]: %TAN%0 %NAME%%MAP%
 ItemDisplay[(zbl OR zbo OR zbr OR zbu OR zci)]: %BLUE%0 %ORANGE%%NAME%%MAP%
 
 //Unique tertiary components
-ItemDisplay[(zcz OR zda OR zdg OR zdh OR zdi OR zdj OR zdp)]: %GRAY%0 %NAME%%border-0d%%map-9b%
+ItemDisplay[(zcz OR zda OR zdg OR zdh OR zdi OR zdj OR zdp)]: %GRAY%0 %NAME%%border-0d%%map-4b%
 
 // Skill charm components
 ItemDisplay[zds OR zdt OR zdu OR zdv OR zdx OR zdy OR zdz OR zea OR zeb OR zec OR zed OR zee OR zef OR zeg OR zeh OR zei OR zej OR zek OR zel OR zem OR zen]: %RED%* %NAME%%MAP%
