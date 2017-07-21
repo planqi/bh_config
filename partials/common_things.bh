@@ -575,7 +575,7 @@ ItemDisplay[hcc]: %gold%Horadric Catalyst%CONTINUE%
 // add gem/lesser rune/greater rune dust
 ItemDisplay[hcc]: %yellow%%stat-509% %orange%%stat-510% %blue%%stat-185%%nl%%name%%CONTINUE%
 // add Radiant/Sacred
-ItemDisplay[hcc]: %dark_green%%stat-247% %purple%%stat-248%%nl%%name%
+ItemDisplay[hcc]: %dark_green%%stat-247%%nl%%name%
 
 // witchcraft made me do it:
 ItemDisplay[UNI 9st ID]: %GOLD%Honda Sedan%CONTINUE%

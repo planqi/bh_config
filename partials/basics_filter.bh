@@ -11,14 +11,21 @@ ItemDisplay[gpm]:
 ItemDisplay[opm]:
 ItemDisplay[gpl]:
 ItemDisplay[opl]:
-ItemDisplay[hp1]: // %RED%+ %WHITE%H1
-ItemDisplay[hp2]: // %RED%+ %WHITE%H2
-ItemDisplay[hp3]: // %RED%+ %WHITE%H3
-ItemDisplay[hp4]: // %RED%+ %WHITE%H4
+ItemDisplay[hp1 CLVL>10]:
+ItemDisplay[hp1]: %RED%+ %WHITE%H1
+ItemDisplay[hp2 CLVL>20]:
+ItemDisplay[hp2]: %RED%+ %WHITE%H2
+ItemDisplay[hp3 CLVL>40]:
+ItemDisplay[hp3]: %RED%+ %WHITE%H3
+ItemDisplay[hp4 CLVL>80]:
+ItemDisplay[hp4]: %RED%+ %WHITE%H4
 ItemDisplay[hp5]: %RED%+ H%WHITE%5
-ItemDisplay[mp1]: // %BLUE%+ %WHITE%M1
-ItemDisplay[mp2]: // %BLUE%+ %WHITE%M2
-ItemDisplay[mp3]: // %BLUE%+ %WHITE%M3
+ItemDisplay[mp1 CLVL>10]:
+ItemDisplay[mp1]: %BLUE%+ %WHITE%M1
+ItemDisplay[mp2 CLVL>30]:
+ItemDisplay[mp2]: %BLUE%+ %WHITE%M2
+ItemDisplay[mp3 CLVL>60]:
+ItemDisplay[mp3]: %BLUE%+ %WHITE%M3
 ItemDisplay[mp4]: %BLUE%+ %WHITE%M4
 ItemDisplay[mp5]: %BLUE%+ M%WHITE%5
 ItemDisplay[rvs]: %PURPLE%+ R%WHITE%1
