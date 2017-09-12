@@ -1,5 +1,5 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.8.9
+Metadata[minimum_bh]: 1.8.10
 Metadata[target_patch]: 1.5
 
 // Some named colors here for convenience
@@ -175,4 +175,8 @@ Looting Enabled:        True, VK_7
 
 //Item Display Configuration
 Advanced Item Display:  True, None
+// These are somewhat experimental
+Item Drop Notifications: False, None
+Item Close Notifications: False, None
+
 

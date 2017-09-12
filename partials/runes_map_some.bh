@@ -5,6 +5,8 @@ ItemDisplay[RUNE>12]: %name%%border-d0%%CONTINUE%
 
 //No Indicator, White text, no map
 ItemDisplay[RUNE<13]: %WHITE%* %RUNENAME% * (%RUNENUM%)//%dot-20%
+//Put lower runes on map when lower clvl
+ItemDisplay[RUNE<13 CLVL<70]: %name%%dot-20%
 //Grey Indicator, Orange text, grey map
 ItemDisplay[RUNE<20 RUNE>12]: %GRAY%0 %ORANGE%* %RUNENAME% * (%RUNENUM%)
 //Lem - Gul: Red Indicator, Orange text, red map dot
