@@ -592,8 +592,10 @@ ItemDisplay[STAT508>0]: Count: %stat-508%%nl%%name%
 ItemDisplay[hcc STAT509=0 STAT510=0 STAT185=0 STAT247=0 STAT248=0]: %name%
 // shorten name
 ItemDisplay[hcc]: %gold%Horadric Catalyst%CONTINUE%
-// add gem, lesser rune/greater rune dust, Radiant
-ItemDisplay[hcc]: %yellow%%stat-509% %orange%%stat-510% %blue%%stat-185% %dark_green%%stat-247%%nl%%name%
+// add Radiant, gem
+ItemDisplay[hcc]: %dark_green%%stat-247% %yellow%%stat-509%%nl%%name%%CONTINUE%
+// add lesser rune/greater rune dust
+ItemDisplay[hcc]: %orange%%stat-510% %blue%%stat-185%%nl%%name%
 
 // witchcraft made me do it:
 ItemDisplay[UNI 9st ID]: %GOLD%Honda Sedan%CONTINUE%
