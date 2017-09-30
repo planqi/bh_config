@@ -1,6 +1,6 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.8.10
-Metadata[target_patch]: 1.5
+Metadata[minimum_bh]: 1.8.11
+Metadata[target_patch]: 1.6
 
 // Some named colors here for convenience
 // full pallette: https://raw.githubusercontent.com/planqi/slashdiablo-maphack/master/readme_gfx/color_palette.png

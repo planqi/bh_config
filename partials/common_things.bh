@@ -431,6 +431,10 @@ ItemDisplay[%a2 || %a6 || %aa || %ae || %ag || %ah]: %purple%+ %name%%border-9b%
 // super rare
 ItemDisplay[%a3 || %a7 || %ab || %af || %aj || %ak]: %orange%0 %name%%border-9b%%dot-60%
 
+// 1.6
+// Orbs
+ItemDisplay[(czd OR czf OR cze OR czg)]: %orange%* %name%%map-68%%dot-ac%
+
 // Anni
 // just using fire res stat because they are all the same
 ItemDisplay[UNI ID cm1 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39% %dark_green%%stat-85%%nl%%gold%%NAME%
