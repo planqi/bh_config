@@ -463,15 +463,23 @@ ItemDisplay[xe3]: %orange%0 %name%%border-9b%%dot-60%%line-9b%
 // Nightmare Maul        xee
 // Nightmare Skean       xef
 
+// Act 1
 // Weapons: xeb || xec || xed || xee || xef
 ItemDisplay[xeb || xec || xed || xee || xef]: %name%%border-00%%CONTINUE%
 ItemDisplay[!UNI (xeb || xec || xed || xee || xef)]: %name%%map-97%%CONTINUE%%dark_green% +%white%
 ItemDisplay[UNI (xeb || xec || xed || xee || xef)]: %purple%0 %gold%%name%%map-9b%%CONTINUE%
 
+// Act 2
 // Armors: xeh || xej || xei
 ItemDisplay[xeh || xej || xei]: %name%%border-00%%CONTINUE%
 ItemDisplay[!UNI (xeh || xej || xei)]: %name%%map-97%%CONTINUE%%dark_green% +%white%
 ItemDisplay[UNI (xeh || xej || xei)]: %purple%0 %gold%%name%%map-9b%%CONTINUE%
+
+// Act 3
+// xek, xem
+ItemDisplay[xek || xem]: %name%%border-00%%CONTINUE%
+ItemDisplay[!UNI (xek || xem)]: %name%%map-97%%CONTINUE%%dark_green% +%white%
+ItemDisplay[UNI (xek || xem)]: %purple%0 %gold%%name%%map-9b%%CONTINUE%
 
 // Anni
 // just using fire res stat because they are all the same
