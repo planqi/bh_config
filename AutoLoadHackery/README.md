@@ -1,4 +1,4 @@
-How to have BH (and D2HD) loaded on D2 start
+How to have BH (and D2HD) loaded on D2 start (1.13c only)
 ===
 
 * Backup your D2Win.dll
