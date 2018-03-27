@@ -1,6 +1,6 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.8.11
-Metadata[target_patch]: 1.6
+Metadata[minimum_bh]: 1.8.12
+Metadata[target_patch]: 1.7b
 
 // Some named colors here for convenience
 // full pallette: https://raw.githubusercontent.com/planqi/slashdiablo-maphack/master/readme_gfx/color_palette.png
@@ -18,7 +18,7 @@ Metadata[target_patch]: 1.6
 // 0x76;  // dark green
 
 // Resurgence only stats
-Stat Screen[cooldown_modifier]: // reduced cooldown
+Stat Screen[item_cooldownmodifier]: // reduced cooldown
 Stat Screen[curse_resistance]:
 Stat Screen[passive_dmg_pierce]: // phys pierce
 
@@ -111,7 +111,7 @@ Skill Warning[151]:     True           // cyclone armor
 AutomapInfo[0]:         Name: %GAMENAME%
 AutomapInfo[1]:         Password: %GAMEPASS%
 AutomapInfo[2]:         %LEVEL%
-AutomapInfo[3]:         %GAMEDIFF% - v3.0
+AutomapInfo[3]:         %GAMEDIFF%
 AutomapInfo[4]:         %GAMETIME%
 AutomapInfo[5]:         %ACCOUNTNAME%
 AutomapInfo[6]:         Ping: %PING%
