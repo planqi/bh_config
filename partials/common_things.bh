@@ -361,6 +361,9 @@ ItemDisplay[cf6]: %WHITE%* %name%%border-60%%dot-20%
 // Blessed Crystal
 ItemDisplay[cf4]: %dark_green%* %name%%map-85%%dot-b5%
 
+// 1.9 thing
+ItemDisplay[#95]: %name%%map-8f%%border-6f%%line-8f%
+
 // Runestones
 // border
 ItemDisplay[%c0 || %c1 || %c2 || %c3]: %name%%border-c5%%CONTINUE%

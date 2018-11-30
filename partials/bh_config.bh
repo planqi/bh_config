@@ -1,6 +1,12 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.8.12
-Metadata[target_patch]: 1.7b
+Metadata[minimum_bh]: 1.9.1
+Metadata[target_patch]: 1.9
+
+// Change colors of received messages
+Whisper Color[*chat]: 244
+Whisper Color[*trade]: 7
+Whisper Color[*tcsc]: 7
+Whisper Color[*tchc]: 7
 
 // Some named colors here for convenience
 // full pallette: https://raw.githubusercontent.com/planqi/slashdiablo-maphack/master/readme_gfx/color_palette.png
@@ -86,6 +92,8 @@ Monster Color[759]:      0xA8
 
 Reveal Map:             True, None
 Show Monsters:          True, None
+Monster Resistances:    True, None
+Monster Enchantments:   True, None
 Show Missiles:          False, None
 Show Chests:            True, VK_K
 Force Light Radius:     False, None
@@ -179,4 +187,6 @@ Advanced Item Display:  True, None
 Item Drop Notifications: False, None
 Item Close Notifications: False, None
 
+Show Monster Resistance: 99
+LK Chest Lines: 105
 
