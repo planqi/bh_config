@@ -422,7 +422,7 @@ ItemDisplay[ID !NMAG (WP5) ELT]: %NAME% (%PRICE%)%CONTINUE%
 
 // Important new item codes for 1.1
 // uber uniques
-ItemDisplay[uw1 || uw2 || uw3 || uw4 || uw5 || uw6 || uw7 || uw8 || uw9]: %name% %purple%%map%0%white%%continue%
+ItemDisplay[uw0 || uw1 || uw2 || uw3 || uw4 || uw5 || uw6]: %name% %purple%%map%0%white%%continue%
 
 // A5 portal fragments
 ItemDisplay[re1 OR re2 OR re3 OR cx0]: %NAME% (L%ILVL%) %PURPLE%%MAP%0
