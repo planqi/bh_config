@@ -60,3 +60,6 @@ ItemDisplay[(NMAG OR MAG) ELT WP10]:
 // hide most armors
 // ItemDisplay[(NMAG OR MAG) ELT EQ2 !SUP !aca !ETH]:
 
+// hide low quality items
+ItemDisplay[INF]:
+
