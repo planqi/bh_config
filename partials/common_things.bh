@@ -364,6 +364,10 @@ ItemDisplay[cf4]: %dark_green%* %name%%map-85%%dot-b5%
 // 1.9 thing
 ItemDisplay[#95]: %name%%map-8f%%border-6f%%line-8f%
 
+// 1.10 jewels
+// sj0 sj1 sj2 sj3
+ItemDisplay[sj0 || sj1 || sj2 || sj3]: %name%%border-00%%dot-99%%CONTINUE%
+
 // Runestones
 // border
 ItemDisplay[%c0 || %c1 || %c2 || %c3]: %name%%border-c5%%CONTINUE%
