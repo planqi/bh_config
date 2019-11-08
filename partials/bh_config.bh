@@ -1,6 +1,6 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.9.1
-Metadata[target_patch]: 1.9
+Metadata[minimum_bh]: 1.9.5
+Metadata[target_patch]: 2.0
 
 // Change colors of received messages
 Whisper Color[*chat]: 10
@@ -85,7 +85,7 @@ Monster Color[249]:      0x79
 Monster Color[103]:      0x79
 // molten brute (fire damage) - crystalline / wsk 1 / throne room
 Monster Color[747]:      0x9B
-// riversuccumbus (3-4% mana) - frozen river / wsk 1/2/3 / throne room
+// riversuccubus (3-4% mana) - frozen river / wsk 1/2/3 / throne room
 Monster Color[750]:      0x9B
 // novabat (light damage) - glacial trail / wsk 1/2/3/ throne
 Monster Color[759]:      0xA8
@@ -101,21 +101,32 @@ Remove Weather:         False, None
 Infravision:            True, None
 Display Level Names:    True, None
 Remove Shake:           True, None
-RevealMode:             1
+Reveal Mode:            1
+Show Monster Resistance: 99
+LK Chest Lines: 105
+Low TP Warning: 3
+
+// CPU patch makes the game use less cpu; this has been enabled since BH 1.7
+Apply CPU Patch: True, None
+
 
 Reload Config:          VK_NUMPAD0
 Stats on Right:         False, None
 
-//Skill Warnings: set true to warn when effect expires from the player
-//The skill numbers can be found here:
-//https://github.com/underbent/slashdiablo-maphack/wiki/Effects
-Skill Warning[16]:      True            // enchant
-// Skill Warning[32]:      True            // battle orders
+// Skill Warnings: set true to warn when effect expires from the player
+// The skill numbers can be found here:
+// https://github.com/underbent/slashdiablo-maphack/wiki/Effects
+Skill Warning[30]:      True            // Energy Shield
 Skill Warning[101]:     True            // holy shield
+Skill Warning[139]:     True            // Werewolf
+Skill Warning[140]:     True            // Werebear
 Skill Warning[149]:     False           // oak sage
-Skill Warning[151]:     True           // cyclone armor
+Skill Warning[151]:     True            // cyclone armor
+Skill Warning[157]:     True            // Burst of Speed
+Skill Warning[158]:     True            // Blade Shield
+Skill Warning[159]:     True            // Fade
 
-//Screen Info Configuration
+// Screen Info Configuration
 AutomapInfo[0]:         Name: %GAMENAME%
 AutomapInfo[1]:         Password: %GAMEPASS%
 AutomapInfo[2]:         %LEVEL%
@@ -140,6 +151,7 @@ GameListRefresh:        1500
 Autofill Last Game: True
 Autofill Next Game: True
 Autofill Last Password: True
+Autofill Description: True
 Fail To Join:           4000
 
 //Character Configuration
@@ -186,7 +198,6 @@ Advanced Item Display:  True, None
 // These are somewhat experimental
 Item Drop Notifications: False, None
 Item Close Notifications: False, None
-
-Show Monster Resistance: 99
-LK Chest Lines: 105
+Item Detailed Notifications: True, None
+Always Show Item Stat Ranges:True, None
 

@@ -3,8 +3,10 @@
 ItemDisplay[MAG !ID (jw1 OR jw2 OR jw3 OR jw4 OR jw5 OR jw6 OR jw7)]: %RED%* %BLUE%%NAME%%MAP-97%%CONTINUE%
 
 //Uniques
-ItemDisplay[UNI NORM !crs]: %GRAY%0 %GOLD%%NAME%%CONTINUE%%border-20%%map-0d%
-ItemDisplay[UNI EXC !(aca || ach || acs)]: %RED%0 %GOLD%%NAME%%CONTINUE%%border-0d%%dot-20%
+// todo fix and test vertex of sin and glitterblade
+// LVLREQ always returns true for packet drop (old notifications)
+ItemDisplay[UNI NORM !msf !vip !qf1 !qhr !qey !qbr !hfh]: %GRAY%0 %GOLD%%NAME%%CONTINUE%%border-20%%map-0d%
+ItemDisplay[UNI EXC]: %RED%0 %GOLD%%NAME%%CONTINUE%%border-0d%%dot-20%
 ItemDisplay[UNI ELT]: %PURPLE%0 %GOLD%%NAME%%CONTINUE%%border-8f%%map-0d%
 ItemDisplay[UNI (jw1 OR jw2 OR jw3 OR jw4 OR jw5 OR jw6)]: %PURPLE%0 %GOLD%%NAME%%MAP%%CONTINUE%
 ItemDisplay[UNI (aq1 || aq2 || aq3 || aq4 || aq5 || aq6 || bq1 || bq2 || bq3 || bq4)]: %NAME% %PURPLE%*%map-5a%%border-ac%
@@ -218,13 +220,13 @@ ItemDisplay[NMAG (wsp OR 9ws OR 7ws) (SK121>2 AND SK123>2) (SOCK=0 OR SOCK=5)]: 
 // ItemDisplay[(9lw OR 9tw OR 7tw OR 7lw) !ETH MAG !ID]: %RED%0 %BLUE%%NAME%%MAP%%CONTINUE%
 
 //Gosu Magic Items (for vanilla?)
-ItemDisplay[uit MAG SOCK=4]: %ORANGE%%NAME%%MAP%%CONTINUE%
-ItemDisplay[EQ2 MAG SOCK=4]: %ORANGE%%NAME%%MAP%%CONTINUE%
-ItemDisplay[CL4 (TABSK34>2 AND SK149>2)]: %ORANGE%%NAME%%MAP%%CONTINUE%
-ItemDisplay[CL5 (TABSK48>2 AND SK271>2)]: %ORANGE%%NAME%%MAP%%CONTINUE%
-ItemDisplay[CL5 (CLSK6>1 AND SK271>1)]: %PURPLE%%MAP%%NAME%%CONTINUE%
-ItemDisplay[CL5 (TABSK48>1 AND SK271>1)]: %PURPLE%%NAME%%MAP%%CONTINUE%
-ItemDisplay[CL0 (TABSK2>2 AND SK35>2)]: %PURPLE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[uit MAG SOCK=4]: %ORANGE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[EQ2 MAG SOCK=4]: %ORANGE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[CL4 (TABSK34>2 AND SK149>2)]: %ORANGE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[CL5 (TABSK48>2 AND SK271>2)]: %ORANGE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[CL5 (CLSK6>1 AND SK271>1)]: %PURPLE%%MAP%%NAME%%CONTINUE%
+// ItemDisplay[CL5 (TABSK48>1 AND SK271>1)]: %PURPLE%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[CL0 (TABSK2>2 AND SK35>2)]: %PURPLE%%NAME%%MAP%%CONTINUE%
 
 //Rares
 
@@ -237,7 +239,7 @@ ItemDisplay[RARE !ID (EQ4 OR EQ5)]: %RED%0 %YELLOW%%NAME%%MAP%%CONTINUE%
 ItemDisplay[RARE !ID (EQ6 OR EQ3)]: %RED%0 %YELLOW%%NAME%%MAP%%CONTINUE%
 
 //ETH Berserker Axe, Colossus Sword, Colossus Blade & Crystal Sword Variants
-ItemDisplay[RARE ETH !ID (wax OR 9wa OR 7wa OR crs OR 9cr OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR CL5)]: %RED%0 %YELLOW%%NAME%%MAP%%CONTINUE%
+// ItemDisplay[RARE ETH !ID (wax OR 9wa OR 7wa OR crs OR 9cr OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR CL5)]: %RED%0 %YELLOW%%NAME%%MAP%%CONTINUE%
 
 //Assassin Claws
 ItemDisplay[(9lw OR 9tw OR 7tw OR 7lw) RARE !ID]: %RED%0 %YELLOW%%NAME%%MAP%%CONTINUE%
@@ -324,8 +326,8 @@ ItemDisplay[SET sf4]: %PURPLE%0 %GREEN%%NAME%%map-84%%CONTINUE%
 // ItemDisplay[!UNI !SET (aca OR ach OR acs)]: %NAME% %RED%%MAP%0%WHITE%%CONTINUE%
 // ItemDisplay[SUP (aca OR ach OR acs)]: %NAME% %RED%%MAP%0%WHITE%%CONTINUE%
 // ItemDisplay[NMAG (aca OR ach OR acs)]: %NAME% %RED%%MAP%0%WHITE%%CONTINUE%
-ItemDisplay[(MAG OR NMAG OR RARE) (aca OR ach OR acs)]: %NAME% %RED%0%WHITE%%dot-0a%%border-20%%CONTINUE%
-ItemDisplay[(UNI OR SET) (aca OR ach OR acs)]: %NAME% %PURPLE%%MAP%0%WHITE%%CONTINUE%
+ItemDisplay[(MAG || NMAG || RARE) (aca || ach || acs)]: %NAME% %RED%0%WHITE%%dot-0a%%border-20%%CONTINUE%
+ItemDisplay[(UNI || SET) (aca || ach || acs)]: %NAME% %PURPLE%%MAP%0%WHITE%%CONTINUE%
 
 // Reagents
 
@@ -407,6 +409,9 @@ ItemDisplay[%c7]: %dark_green%* %name%%px-5b%%map-77%
 // Lifesprig: #93
 // Eternal Oak: #94
 
+// Rare + useful KF boss augments
+ItemDisplay[(#82 || #85 || #88 | #91 || #94)]: %purple%++ %red%* %name% %border-70%%dot-85%%line-62%
+
 // pandemonium fragment: cx9
 ItemDisplay[cx9]: %NAME%%dot-8c%
 
@@ -460,7 +465,7 @@ ItemDisplay[%a3 || %a7 || %ab || %af || %aj || %ak]: %orange%0 %name%%border-9b%
 
 // 1.6
 // Orbs
-ItemDisplay[czd || czf || cze || czg]: %orange%* %name%%map-68%%dot-ac%
+// ItemDisplay[czd || czf || cze || czg]: %orange%* %name%%map-68%%dot-ac%
 
 
 // 1.6 Exodus
@@ -518,8 +523,10 @@ ItemDisplay[UNI (xek || xem)]: %purple%0 %gold%%name%%map-9b%%CONTINUE%
 
 // lessers
 ItemDisplay[czd || czf]: %dark_green%+ %name%%map-81%%px-20%
-// greaters
-ItemDisplay[cze || czg]: %purple%* %name%%map-20%%dot-8f%
+// greaters arcanist's
+ItemDisplay[czg]: %purple%* %name%%map-20%%dot-8f%
+// greater diviner's
+ItemDisplay[cze]: %purple%** %name%%border-a0%%dot-a2%
 
 // Essence
 // Essence Tenth: et0
@@ -536,9 +543,14 @@ ItemDisplay[cze || czg]: %purple%* %name%%map-20%%dot-8f%
 ItemDisplay[et0 || et9 || et8 || et7 || et6]: %dark_green%+ %name%%map-97%%dot-6f%
 ItemDisplay[et5 || et4 || et3 || et2 || et1]: %purple%+ %name%%map-9b%%dot-6f%
 
+// Unique Lich rings (cave of horrors)
+ItemDisplay[UNI (li0 || li1 || li2 || li3 || li4 || li5 || li6)]: %PURPLE%0 %RED%%NAME%%MAP%%CONTINUE%
 // Anni
 // just using fire res stat because they are all the same
 ItemDisplay[UNI ID cm1 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39% %dark_green%%stat-85%%nl%%gold%%NAME%
+
+// Organs
+ItemDisplay[mbr || bey || dhn]: %name%%px-60%
 
 // Torches
 ItemDisplay[UNI ID cm2 ILVL=99]: %red%%stat-7% %blue%%stat-9% %white%%stat-39%%nl%%gold%%NAME%%CONTINUE%

@@ -1,33 +1,39 @@
 //Ignore 'junk' (Miscellaneous potions, etc.), potion, scroll renaming & smaller gold piles.
-ItemDisplay[GOLD<4000]:
 ItemDisplay[tsc]: %GREEN%+ %WHITE%TP
 ItemDisplay[isc]: %GREEN%+ %WHITE%ID
-ItemDisplay[vps]:
-ItemDisplay[yps]:
-ItemDisplay[wms]:
-ItemDisplay[gps]:
-ItemDisplay[ops]:
-ItemDisplay[gpm]:
-ItemDisplay[opm]:
-ItemDisplay[gpl]:
-ItemDisplay[opl]:
-ItemDisplay[hp1 CLVL>10]:
+ItemDisplay[(vps || yps || wms) CLVL>14]: //Ignore 'utility' potions starting at clvl 15
+ItemDisplay[vps]: Stamina
+ItemDisplay[yps]: %GREEN%o %WHITE%Antidote
+ItemDisplay[wms]: Thaw
+ItemDisplay[gps]: //Ignore Rancid Gas potion
+ItemDisplay[ops]: //Ignore Oil potion
+ItemDisplay[gpm]: //Ignore Choking Gas potion
+ItemDisplay[opm]: //Ignore Exploding potion
+ItemDisplay[gpl]: //Ignore Strangling Gas potion
+ItemDisplay[opl]: //Ignore Fulminating potion
+ItemDisplay[hp1 CLVL>15]:
 ItemDisplay[hp1]: %RED%+ %WHITE%H1
-ItemDisplay[hp2 CLVL>20]:
+ItemDisplay[hp2 CLVL>25]:
 ItemDisplay[hp2]: %RED%+ %WHITE%H2
-ItemDisplay[hp3 CLVL>40]:
+ItemDisplay[hp3 CLVL>45]:
 ItemDisplay[hp3]: %RED%+ %WHITE%H3
 ItemDisplay[hp4 CLVL>80]:
 ItemDisplay[hp4]: %RED%+ %WHITE%H4
 ItemDisplay[hp5]: %RED%+ H%WHITE%5
-ItemDisplay[mp1 CLVL>10]:
+ItemDisplay[mp1 CLVL>15]:
 ItemDisplay[mp1]: %BLUE%+ %WHITE%M1
-ItemDisplay[mp2 CLVL>30]:
+ItemDisplay[mp2 CLVL>35]:
 ItemDisplay[mp2]: %BLUE%+ %WHITE%M2
-ItemDisplay[mp3 CLVL>60]:
+ItemDisplay[mp3 CLVL>65]:
 ItemDisplay[mp3]: %BLUE%+ %WHITE%M3
 ItemDisplay[mp4]: %BLUE%+ %WHITE%M4
 ItemDisplay[mp5]: %BLUE%+ M%WHITE%5
 ItemDisplay[rvs]: %PURPLE%+ R%WHITE%1
 ItemDisplay[rvl]: %PURPLE%+ Full%dot-8f%
+
+//Ignore small gold stacks - progressive system based on character level
+ItemDisplay[CLVL>19 GOLD<200]:
+ItemDisplay[CLVL>39 GOLD<500]:
+ItemDisplay[CLVL>59 GOLD<2000]:
+ItemDisplay[CLVL>79 GOLD<4000]:
 
