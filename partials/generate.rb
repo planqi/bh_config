@@ -7,6 +7,7 @@ configs['HideNothing'] = %w|
   gems_common
   runes_map_all
   common_things
+  isumi_rares
   beef_common
   charm_comp_common
   common_end
@@ -19,6 +20,7 @@ configs['HideLotsOfThings'] = %w|
   gems_hide_below_flawless
   runes_map_some
   common_things
+  isumi_rares
   beef_hide
   beef_common
   charm_comp_common
