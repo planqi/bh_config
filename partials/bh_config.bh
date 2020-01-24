@@ -1,6 +1,6 @@
 Metadata[author]: planqi
-Metadata[minimum_bh]: 1.9.5
-Metadata[target_patch]: 2.0
+Metadata[minimum_bh]: 1.9.7
+Metadata[target_patch]: 1.10h
 
 // Change colors of received messages
 Whisper Color[*chat]: 10
@@ -153,6 +153,7 @@ Autofill Next Game: True
 Autofill Last Password: True
 Autofill Description: True
 Fail To Join:           4000
+Show Difficulty: True
 
 //Character Configuration
 Character Stats:         VK_8
